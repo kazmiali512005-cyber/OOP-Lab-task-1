@@ -1,5 +1,6 @@
 # OOP-Lab-task-1
-TASK 1#include <iostream>
+TASK 1 
+#include <iostream>
 using namespace std;
 
 struct Student {
