@@ -15,6 +15,58 @@ struct Student {
         cout << "Marks: " << marks << endl;
     }
 };
+TASK #include <iostream>
+using namespace std;
+
+struct Student {
+    string firstName;
+    string lastName;
+    int rollNumber;
+    float marks;
+
+    // Member function
+    void displayStudentInfo() {
+        cout << "\nFull Name: " << firstName << " " << lastName << endl;
+        cout << "Roll Number: " << rollNumber << endl;
+        cout << "Marks: " << marks << endl;
+    }
+};
+
+int main() {
+    int n;
+
+    cout << "Enter number of students: ";
+    cin >> n;
+
+    // Array of structures
+    Student students[n];
+
+    // Input details
+    for(int i = 0; i < n; i++) {
+        cout << "\nEnter details for Student " << i + 1 << endl;
+
+        cout << "First Name: ";
+        cin >> students[i].firstName;
+
+        cout << "Last Name: ";
+        cin >> students[i].lastName;
+
+        cout << "Roll Number: ";
+        cin >> students[i].rollNumber;
+
+        cout << "Marks: ";
+        cin >> students[i].marks;
+    }
+
+    // Display details
+    cout << "\n----- Student Information -----" << endl;
+
+    for(int i = 0; i < n; i++) {
+        students[i].displayStudentInfo();
+    }
+
+    return 0;
+}2
 
 int main() {
     // Structure variable
